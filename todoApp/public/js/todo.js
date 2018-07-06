@@ -136,7 +136,8 @@ $(document).ready(function(){
   });
 
        $('.notes').on('click',function(event){
-        $('.input,.data').css({'display': 'none'}); 
+        if(!window.location.href.includes('trash'))
+        $('.input,.data,h1').css({'display': 'none'}); 
           var url;
            $('#bdy').empty();
            if(window.location.href.includes('viewlabeltasks')||window.location.href.includes('notific') || window.location.href.includes('viewnotitasks') || window.location.href.includes('viewnotiarchivetasks')|| window.location.href.includes('search')){
@@ -167,6 +168,58 @@ $(document).ready(function(){
            var div=$('<div class="div3"></div>').css({'max-width':'450px','max-height':'150px','overflow':'auto'});
            t=tit;
            d=des;
+
+
+                $.ajaxSetup({
+                  headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                  }
+                });
+                  $.ajax({             
+                url:'/getreminder',
+                method:'post',
+                data:{
+                  data:id
+                },
+                success: function(response){ 
+                  var noti = response;
+                  if(noti!=""){
+                    var d=$("<div></div>");
+                    var span=$('<span class="removenoti"></span>').text("X").css({'padding-left':'5px','color':'red','cursor':'pointer'});
+                    var p=$('<p class="notiresponse"></p>').text(noti).css({'display':'inline-block','border':'solid','margin-right':'5px','padding':'5px','color':'white','background':'grey','border-radius':'10px'}).append(span);
+                    d.append('<i class="fas fa-clock "></i>').append(p);
+                  $('#bdy').append(d);
+              }
+            }                
+              });
+
+              $('body').on('click','.removenoti',function(event){
+                  url ="/removenoti";
+                 var id=$(this).parent().parent().parent().find('#id').val();
+                $(this).parent().parent().remove();  
+                $.ajaxSetup({
+                  headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                  }
+                });
+              $.ajax({             
+                  url:url,
+                  method:'post',
+                  data:{
+                    id:id,
+                  },
+                  success: function(){ 
+                    if(window.location.href.includes('notific')){
+                      window.location.reload();
+                    }
+             
+                  }        
+                });
+               
+                 event.stopImmediatePropagation();
+      
+              });
+                    
               $.ajaxSetup({
                 headers: {
                   'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -191,7 +244,9 @@ $(document).ready(function(){
           }
       }                
         });
-         
+        
+        
+      
         $('body').on('click','.removelbl',function(event){
           var url;
           if(window.location.href.includes('viewlabeltasks')||window.location.href.includes('notific') || window.location.href.includes('viewnotitasks') || window.location.href.includes('viewnotiarchivetasks')|| window.location.href.includes('search')){
@@ -260,7 +315,6 @@ $(document).ready(function(){
         event.stopPropagation();
         $('html').click(function(evt){   
             if(event2=='ready'){
-              $('*').find('.ipform').css({'pointer-events': 'auto'});       
                 if(evt.target.id == "bdy"  )
                   return;      
                 if($(evt.target).closest('#bdy').length)
@@ -305,8 +359,9 @@ $(document).ready(function(){
             window.location.reload();
           }
             $('.modal').css({'display':'none'});
-            event2="";         
-            $('.input,.data').css({'display': 'block'}); 
+            event2="";
+            if(!window.location.href.includes('trash'))         
+            $('.input,.data,h1').css({'display': 'block'}); 
          
         }
 
@@ -662,7 +717,7 @@ $(document).ready(function(){
                 var div = $('<aside id="all_labels"></aside>');
                 var head=$('<h4></h4>').text('ADD LABELS');
                 div.append(head);
-                div.css({'max-height':'300px','width':'170px','overflow':'auto','border':'solid','display':'none'});
+                div.css({'max-height':'300px','width':'180px','overflow':'auto','border':'solid','display':'none'});
                 var url;
                  if(window.location.href.includes('viewlabeltasks')||window.location.href.includes('notific') || window.location.href.includes('viewnotitasks') || window.location.href.includes('viewnotiarchivetasks')|| window.location.href.includes('search')){
                   
@@ -767,7 +822,7 @@ $(document).ready(function(){
                          
                 var note = $(this).parents('.note');
                 var id= $(this).parents('.note').find('#id').val();
-                var div = $('<div id="reminders"></div>').css({'border':'solid','display':'none'}).css({'width':'170px'});
+                var div = $('<div id="reminders"></div>').css({'border':'solid','display':'none'}).css({'width':'180px'});
                 var head= $('<h5></h5>').text('ADD REMINDER'); 
                 var sp1= $('<span></span>').text('DATE:-');
                 var sp2= $('<span></span>').text('TIME:-');
@@ -882,5 +937,28 @@ $(document).ready(function(){
             $('#no_noti').text('');
           });
   
-       
+        $('.pin').click(function(){
+            var id= $(this).parents('.note').find('#id').val();
+            var type=$(this).parents('.note').find('#type').val(); 
+            var url;
+           if(type == 'task')
+             url='/pinunpin';
+           if(type == 'archive')
+            url='/pin';
+          $.ajaxSetup({
+            headers: {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+          });
+          $.ajax({                        
+          url: url,
+          method:'post',
+          data:{
+            id:id,
+          },success(){
+            location.reload();
+          }     
+        });
+
+        })
 });

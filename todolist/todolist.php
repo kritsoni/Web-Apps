@@ -22,7 +22,7 @@
    
      <section id="sea">  
      <span>SEARCH: </span> 
-     <input type="text" onkeyup='search(this.value)' id="search" style="border-radius:10px">   
+     <input type="text" onkeyup='search(this.value)' id="search" style="border-radius:10px" autocomplete="off">   
      </section>
      <img src="help.png" id="tutorial" style="width:50px;height:50px;position:relative;left:1400px">
      
@@ -84,7 +84,7 @@
     $pri=$_POST['priori'];
     $titles= join("~!#",$titles);
     $descs= join("~!#",$descs);
-    $con = new mysqli("localhost","root","root","todo");
+    $con = new mysqli("localhost","phpmyadmin","root","todo");
     if($con->connect_error){
         die("connection failed to establish");
     }

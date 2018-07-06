@@ -8,7 +8,7 @@
   $pri=$res[3];
   $titles= join("~!#",$titles);
   $descs= join("~!#",$descs);
-  $con = new mysqli("localhost","root","root","todo");
+  $con = new mysqli("localhost","phpmyadmin","root","todo");
   if($con->connect_error){
       die("connection failed to establish");
   }

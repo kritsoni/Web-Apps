@@ -10,7 +10,7 @@
      display:inline-block;
      border:solid;
      height:140px;
-     width:170px;
+     width:180px;
      margin-right:20px; 
      overflow:auto; 
  }
@@ -39,7 +39,7 @@ margin-bottom:20px;
     margin-top: -10px;
     border:solid;
     border-top: none;
-    width:170px;
+    width:180px;
 }
 
 .option{

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <script src="login.js" > </script>   
+</head>
+<body>
+    <div id="head"> LOGIN - FORM   </div>   
+    <form name="info_form">
+    <div class="field">
+        <span class="fields"> USERNAME:</span><br>
+        <input type="text" size="30" name="a"  > 
+    </div> 
+    <div id="username_valid" class="inline"></div> <br>      
+    <div class="field">
+        <span class="fields"> PASSWORD:</span><br> 
+        <input type="password" size="30"name="pa" >
+    </div>
+     <div id="pass_valid" class="inline"></div>  <br>
+    <input type="button" onclick="return validation()" value="submit" class="field" id="btn" >
+     </form>
+</body>
+</html>

@@ -574,10 +574,14 @@ class TasksController extends Controller
             public function notitime(Request $request){
                 $noti;
                 $id=$request->data;
+                if(sizeof(Reminder::where('taskid',$id)->get())>0){
                 $date=Reminder::where('taskid',$id)->get()[0]->remdate;
                 $time=Reminder::where('taskid',$id)->get()[0]->remtime;
                 $noti=$date.':'.$time;
                 echo $noti;
+             }
+              else 
+                echo "";
             }
             public function viewnotitasks(Task $id){
              $type="task";
@@ -603,6 +607,33 @@ class TasksController extends Controller
                 $response=json_encode($response);
                 return view('search',compact('response')) ;           
             }
+           public function removenoti(Request $request){
+                $id=$request->id;
+                Reminder::where('taskid',$id)->delete();
+           }
+
+           public function pinunpin(Request $request){
+               $id=$request->id;
+               $todo = Task::findOrFail($request->id);
+               if($todo->pin == 0){
+               $todo->pin =1;
+               $todo->save();
+               }
+               else if($todo->pin == 1){
+                $todo->pin =0;
+                $todo->save();
+                }
+                
+           }
+
+           public function pin(Request $request){
+            $todo = Archive::findOrFail($request->id);
+            DB::table('tasks')->insert(['id' => $todo->id,	'title'=>$todo->title,
+            'description'=> $todo->description,'bgcolor'=>$todo->bgcolor,'txtcolor'=>$todo->txtcolor,
+            'frmcolor'=>$todo->frmcolor,'labels'=>$todo->labels,'created_at'=>$todo->created_at,'updated_at'=>$todo->updated_at,'pin'=>1]);
+            $todo->delete();   
+        
+        }
 
         } 
 

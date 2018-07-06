@@ -11,11 +11,11 @@
   <div class="mask"><i class="fas fa-bars fa-3x"></i></div>
 </div>
     </li>
-    <li class="nav-item" >
+    <li class="nav-item" style="padding-left:30px;padding-top:25px;">
      <p style="font-size:40px;color:white">TODOAPP</p>
     </li>
   
-    <li class="nav-item" >
+    <li class="nav-item" style="padding-left:150px;padding-top:33px;">
     <form method="post" action="/search">
     <div class="container">
     <div class="form-group">
@@ -27,12 +27,12 @@
   </div>
   </li>
   
-  <li class="nav-item" >
+  <li class="nav-item" style="padding-top:30px;">
       <img src='/css/alarm.png' style="position:absolute;right:140px;" id="notification"> 
     <span style="color:red;position:absolute;right:120px;" id="no_noti"></span> </li>
   
 
-    <li class="nav-item" >
+    <li class="nav-item" style="padding-top:30px;">
       <img src='/css/price-tag.png' style="position:absolute;right:30px;" id="label"> 
      </li>
   

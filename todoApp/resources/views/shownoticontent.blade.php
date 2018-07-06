@@ -26,7 +26,7 @@
         @endif
      @endif
      <div class="options" style='border:{{$id->frmcolor}};border-top:none;'>
-      <span> <i class="fas fa-trash-alt option trash" style="margin-left:6px;"></i> <i class="fas fa-palette bgcolor"></i> <i class="fas fa-pen txtcolor"></i> <i class="fas fa-archive {{$isarch}}"></i> <img src="/css/blank-square.png" class=" frame" style="margin-top:-1px;margin-left:3px;margin-right:3px"> <i class="fas fa-tags tag"></i> <i class="fas fa-clock remind"></i></span>
+      <span><i class="fas fa-thumbtack pin"></i> <i class="fas fa-trash-alt option trash" style="margin-left:6px;"></i> <i class="fas fa-palette bgcolor"></i> <i class="fas fa-pen txtcolor"></i> <i class="fas fa-archive {{$isarch}}"></i> <img src="/css/blank-square.png" class=" frame" style="margin-top:-1px;margin-left:3px;margin-right:3px"> <i class="fas fa-tags tag"></i> <i class="fas fa-clock remind"></i></span>
      </div>   
    </div> 
    

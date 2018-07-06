@@ -7,7 +7,7 @@
    $arr5=[];
    $counter=0;
    $value=$_POST["val"];
-   $con = new mysqli("localhost","root","root","todo");
+   $con = new mysqli("localhost","phpmyadmin","root","todo");
    if($con->connect_error){
        die("connection failed to establish");
    }

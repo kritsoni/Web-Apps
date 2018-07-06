@@ -56,3 +56,7 @@ Route::post('/notitime', 'TasksController@notitime');
 Route::get('/viewnotitasks/{id}', 'TasksController@viewnotitasks');
 Route::get('/viewnotiarchivetasks/{id}', 'TasksController@viewnotiarchivetasks');
 Route::post('/search', 'TasksController@search');
+Route::post('/getreminder', 'TasksController@notitime');
+Route::post('/removenoti', 'TasksController@removenoti');
+Route::post('/pinunpin', 'TasksController@pinunpin');
+Route::post('/pin', 'TasksController@pin');

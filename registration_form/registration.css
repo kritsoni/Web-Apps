@@ -1,0 +1,79 @@
+
+html{
+    background:url("2.jpeg");
+    background-size: cover;
+}
+#head{
+    position: relative;
+    font-family: 'Monoton', cursive;
+    left:600px;
+    color:white;
+    font-size: 45px;
+
+}
+.inline{
+    position:relative;   
+    display:inline-block;
+    color:red;
+    font-family: 'Russo One', sans-serif;
+    right:-180px;
+    font-size: 20px;
+}
+.in1{
+    right:-130px;
+}
+.in2{
+    right:-246px;
+}
+.in3{
+    right:-70px;
+}
+
+.fields{
+    display:inline-block;
+    font-size:20px;
+    padding: 10px;
+    font-family: 'Permanent Marker', cursive;
+    color:white;    
+}
+.field{
+    display:inline-block;
+    position: relative; 
+    left:50px;
+    margin:6px;
+    width:auto;
+}
+#btn{
+    display:inline-block;
+    margin:10px;
+    padding:10px;
+    position: relative;
+    left:45px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bold;
+    font-size:25px;
+    background: rgb(55, 131, 230);
+    border-radius: 10px;
+    width: 150px;
+    border:none;
+    outline:none;
+    color:white;
+}
+#btn:hover{
+    box-shadow:0 5px 20px  rgba(0, 0, 0, 0.781);
+}
+form{
+    position: relative;
+    top:20px;
+    left:575px;
+    width: 650px;
+    background:rgba(0, 0, 0, 0.438);
+    border-radius:30px;
+    box-shadow:0 15px 25px rgba(0, 0, 0, 0.781);
+    height: 1000px;
+}
+
+#choices{
+    position: relative;
+    left:40px;
+}
