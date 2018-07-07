@@ -479,7 +479,7 @@ d2 = new Date(d2);
                         alert("EVERY TITLE IS REQUIRED");                          
                       }
                       k =document.getElementsByTagName("textarea")
-                     for (var i = 0; i < k.length; i++){
+                     for (var i = 0; i < k.length-1; i++){
                         if(k[i].value==""){
                           alert("EVERY DESCRIPTION IS REQUIRED");
                           b2=false;
