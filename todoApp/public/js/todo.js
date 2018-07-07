@@ -26,7 +26,7 @@ success: function(response){
   
 $(document).ready(function(){
   
- 
+$('body').css({'background':'rgba(232,226,250,.8)'}); 
   var event1="" ;
    var event2="";
    var event3="";   
@@ -135,7 +135,7 @@ $(document).ready(function(){
     }
   });
 
-       $('.notes').on('click',function(event){
+       $('.notes').on('dblclick',function(event){
         if(!window.location.href.includes('trash'))
         $('.input,.data,h1').css({'display': 'none'}); 
           var url;
@@ -233,10 +233,12 @@ $(document).ready(function(){
           },
           success: function(response){ 
             var labs = JSON.parse(response);
+            var urll='/viewlabeltasks/';
             if(labs[0]!=false){  
             $.each(labs, function (index, value) {
               var span=$('<span class="removelbl"></span>').text("X").css({'padding-left':'5px','color':'red','cursor':'pointer'});
-              var p=$('<p class="labls"></p>').text(value).css({'display':'inline-block','border':'solid','margin-right':'5px','padding':'5px','color':'white','background':'grey','border-radius':'10px'}).append(span);
+              var a =$("<a></a>").attr('href',urll+value).text(value).css({'color':'white'});
+              var p=$('<p class="labls"></p>').append(a).append(span).css({'display':'inline-block','border':'solid','margin-right':'5px','padding':'5px','background':'grey','border-radius':'10px'});
               div.append(p);
            
             }); 
@@ -413,7 +415,7 @@ $(document).ready(function(){
          var notes = $(this).parents('.note').find('.notes');
          var id= $(this).parents('.note').find('#id').val();
          var type=$(this).parents('.note').find('#type').val();
-         var div = $('<aside id="picker"></aside>').css({'position':'absolute','background':'white','width':'380px'});
+         var div = $('<aside id="picker"></aside>').css({'position':'absolute','background':'#EEE2FB','width':'400px','height':'300px'});
          bgcol[0]=id;
          note.append(div);
 
@@ -473,7 +475,7 @@ $(document).ready(function(){
               var note = $(this).parents('.note');
            var tit = $(this).parents('.note').find('.title');
            var des = $(this).parents('.note').find('.description');
-           var div = $('<aside id="picker"></aside>').css({'position':'absolute','background':'white','width':'380px'});
+           var div = $('<aside id="picker"></aside>').css({'position':'absolute','background':'#EEE2FB','width':'400px','height':'300px'});
            var id= $(this).parents('.note').find('#id').val();
            var type=$(this).parents('.note').find('#type').val();
            txtcol[0]=id;       
@@ -536,7 +538,7 @@ $(document).ready(function(){
              }  
                    var note = $(this).parents('.note');           
               var notes = $(this).parents('.note').find('.notes');
-              var div = $('<aside id="picker"></aside>').css({'position':'absolute','background':'white','width':'380px'});
+              var div = $('<aside id="picker"></aside>').css({'position':'absolute','background':'#EEE2FB','width':'400px','height':'300px'});
               var id= $(this).parents('.note').find('#id').val();
               var type= $(this).parents('.note').find('#type').val();
               var opt = $(this).parent().parent();

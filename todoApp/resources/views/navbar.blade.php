@@ -1,6 +1,6 @@
 <div class="container" class='nav'>
 
-<nav class="navbar navbar-expand bg-dark navbar-dark fixed-top" style="position:absolute;left:100px;height:100px">
+<nav class="navbar navbar-expand bg-dark navbar-dark fixed-top" style="position:fixed;left:100px;height:100px">
   <ul class="navbar-nav">
     <li class="nav-item">
       <div class="radial-menu">

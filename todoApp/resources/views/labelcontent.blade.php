@@ -4,6 +4,8 @@
 @else
 @if(gettype(json_decode($response)[0][0])=='object')
  <div style="padding-top: 40px;" class="data">
+ <h1>OTHERS:-</h1>
+
     @foreach(json_decode($response)[0] as $task)
         
     <div class="note">
