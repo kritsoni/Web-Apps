@@ -100,7 +100,9 @@ $('body').css({'background':'rgba(232,226,250,.8)'});
         $('#note').attr('placeholder','TITLE');
         event1="ready";
         event.stopPropagation();
-        $('*').find('div').not('.nav').css({'pointer-events': 'none'});
+        $('*').find('div').not('.nav').not('.input').css({'pointer-events': 'none'});
+        $('#note').css({'pointer-events': 'auto'});
+        $('#desc').css({'pointer-events': 'auto'});
     });
     $('html').click(function(evt){
         if(event1 == 'ready'){
