@@ -55,3 +55,32 @@
 ### Home page
 ![tut1](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/tut1.png)
 
+
+### Create task section
+![tut2](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/tut2.png)
+![tut3](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/tut3.png)
+
+
+### Menu Section
+![tut4](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/tut4.png)
+
+
+### Section after a menu item is chosen
+![tut5](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/tut5.png)
+![tut6](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/tut6.png)
+
+
+### Edit Task Section
+![tut7](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/tut7.png)
+![tut8](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/tut8.png)
+
+
+### End Of Tutorial
+![tut9](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/tut9.png)
+
+
+
+
+
+
+
