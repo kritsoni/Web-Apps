@@ -1,4 +1,4 @@
-# Todolist 
+# TodoApp 
 
 ## Prerequisite:-
 * Basic knowledge of HTML, CSS, JS, JSON, Ajax , PHP ,Laravel and Angular JS.
