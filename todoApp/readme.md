@@ -1,60 +1,58 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Todolist 
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## Prerequisite:-
+* Basic knowledge of HTML, CSS, JS, JSON, Ajax , PHP ,Laravel and Angular JS.
+* Text editor like Notepad, Sublime Text etc.
+* LAMP/WAMP installed system.
+* Proper internet connectivity..
 
-## About Laravel
+## Project Description:-
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+1. This is a  web application built in HTML, CSS, Jquery ,Javascript ,Ajax , PHP ,Laravel and Angular JS.. 
+2. It provides you the functionality of:-
+    1. create and edit task
+    2. Soft delete a task(Trash) and then from trash it can be deleted permanently or restored again.
+    3. search task by title
+    4. Archive-Unarchive a task.
+    5. Group similiar tasks by adding labels to it.Labels are created from label panel.
+    6. Add reminder to task which will give notification on or after the specified time whenever app is opened.
+    7. Pin important tasks.
+    8. View tasks having similar label,having reminders on them,are in trash or are archived.
+3. All the entries will be stored in Database.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+## Screenshots:-
 
-## Learning Laravel
+### Home Page.
+![home](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/home.png)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+### Create Task Page.
+![create](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/create.png)
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
 
-## Laravel Sponsors
+### Search feature in which searched query is highlighted 
+![searchresult](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/searchresult.png)
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+### Add Background,Text and frame color.
+![color](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/color.png)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
+### Deleted tasks present in trash.
+![trashed](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/trashed.png)
 
-## Contributing
+### Archived tasks present in Archive.
+![archived](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/archived.png)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Labels Functionality
+![labels](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/labels.png)
+![addlabels](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/addlabels.png)
 
-## Security Vulnerabilities
+### Reminder Functionality
+![notificationspanel](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/notificationspanel.png)
+![addreminder](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/addreminder.png)
+![notifications](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/addreminder.png)
+![reminderitems](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/reminderitems.png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Double click to Edit task details,labels,reminder.
+![edittask](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/edittask.png)
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
