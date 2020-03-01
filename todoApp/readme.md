@@ -30,7 +30,7 @@
 ![create](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/create.png)
 
 
-### Search feature in which searched query is highlighted 
+### Search feature 
 ![searchresult](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/searchresult.png)
 
 ### Add Background,Text and frame color.
@@ -49,7 +49,7 @@
 ### Reminder Functionality
 ![notificationspanel](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/notificationspanel.png)
 ![addreminder](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/addreminder.png)
-![notifications](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/addreminder.png)
+![notifications](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/notifications.png)
 ![reminderitems](https://github.com/kritsoni/Web-Apps/blob/master/todoApp/images/reminderitems.png)
 
 ### Double click to Edit task details,labels,reminder.
