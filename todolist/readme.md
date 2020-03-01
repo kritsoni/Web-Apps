@@ -13,20 +13,16 @@
         * create task
         * delete task
         * search(by title)&searched query is highlighted 
-        * view task by:-COMPLETED OR SHOULD HAVE BEEN COMPLETED
-         		VERY-IMPORTANT(priority)
-        	        IMPORTANT(priority)
-         		NORMAL(priority)
-      		        BY DATE
-        		TODAY`S TASKS
-         		ALL TASKS
+        * view task by:-
+		* COMPLETED OR SHOULD HAVE BEEN COMPLETED
+         	* VERY-IMPORTANT(priority)
+        	* IMPORTANT(priority)
+         	* NORMAL(priority)
+      		* BY DATE
+        	* TODAY`S TASKS
+         	* ALL TASKS
         * IT has a tutorial section.
         * a task can have multiple tasks(optionally).
         * modification of task      
                         
 * All the entries will be stored in Database.
-
-
-
-
-		/* Thank You So Much */
