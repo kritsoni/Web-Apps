@@ -17,5 +17,28 @@
 ### Registration form.
 ![reg_form](https://github.com/kritsoni/Web-Apps/blob/master/registration_form/images/reg_form.png)
 
-### Registration form showing basic validations.
+### Registration form with basic validations.
 ![reg_form_basicval](https://github.com/kritsoni/Web-Apps/blob/master/registration_form/images/reg_form_basicval.png)
+
+### Registration form with other validations.
+![reg_form_complexval](https://github.com/kritsoni/Web-Apps/blob/master/registration_form/images/reg_form_complexval.png)
+
+### Registration form with User Exits scenario where 3 randomly system generated available username are shown .
+![userexists](https://github.com/kritsoni/Web-Apps/blob/master/registration_form/images/userexists.png)
+
+### Registration form with all Countries fetched from a json .
+![countryjson](https://github.com/kritsoni/Web-Apps/blob/master/registration_form/images/countryjson.png)
+
+### Registration form with all States fetched from a json specific to the country selected buy the user.
+![statespecificcountry](https://github.com/kritsoni/Web-Apps/blob/master/registration_form/images/statespecificcountry.png)
+
+### Login form 
+![loginform](https://github.com/kritsoni/Web-Apps/blob/master/registration_form/images/loginform.png)
+
+### Login form with failed login scenario
+![failelogin](https://github.com/kritsoni/Web-Apps/blob/master/registration_form/images/failelogin.png)
+
+### Login form with succesfull login scenario
+![succeslogin](https://github.com/kritsoni/Web-Apps/blob/master/registration_form/images/succeslogin.png)
+
+
