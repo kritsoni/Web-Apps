@@ -24,3 +24,10 @@
     5. IT has a tutorial section.
     6. a task can have multiple tasks(optionally).            
 7. All the entries will be stored in Database.
+
+
+## Screenshots:-
+
+### Home Page.
+![home](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/home.png)
+
