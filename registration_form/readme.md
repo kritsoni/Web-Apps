@@ -18,4 +18,4 @@
 ![reg_form](https://github.com/kritsoni/Web-Apps/blob/master/registration_form/images/reg_form.png)
 
 ### Registration form showing basic validations.
-![reg_form_basicval](https://github.com/kritsoni/Web-Apps/blob/master/registration_form/images/reg_form_basicval.png.png)
+![reg_form_basicval](https://github.com/kritsoni/Web-Apps/blob/master/registration_form/images/reg_form_basicval.png)
