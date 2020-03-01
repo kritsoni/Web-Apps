@@ -1,11 +1,4 @@
-		      /*Introduction to ToDo List Application*/
-
-*About Author:-
-
-#Developer      -->   MLVTEC Team, Bhilwara
-#Developed at 	-->   Ready Bytes Software Labs Pvt. Ltd. Bhilwara
-#Under guidance	-->   Shyam Sunder Boss.
-#Date Created	-->   Wed,May 30 2018.
+# Todolist 
 
 *All you need is:-
 
