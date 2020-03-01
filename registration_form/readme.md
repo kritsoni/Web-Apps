@@ -1,30 +1,21 @@
-# Alien Invasion
+# Registration & Login Form Application
 
 ## Prerequisite:-
-A system with python installed.
+* Basic knowledge of HTML, CSS, JS, JSON, Ajax & PHP.
+* Text editor like Notepad, Sublime Text etc.
+* LAMP/WAMP installed system.
+* Proper internet connectivity..
 
 ## Project Description:-
 
-**Alien Invasion** is a 2d game in built in the pygame module of the python programming language and has following functionalities:-
-
-* In Alien Invasion, the player controls a ship that appears at the bottom center of the screen. The player can move the ship
-  right and left using the arrow keys and shoot bullets using the spacebar.
-* When the game begins, a fleet of aliens fills the sky and moves across and down the screen. The player shoots and destroys     the aliens
-* If the player shoots all the aliens, a new fleet appears that moves faster than the previous fleet. If any alien hits the       player’s ship or reaches the bottom of the screen, the player loses a ship. If the player loses three ships, the game ends.
+* This is a small web application built in HTML, CSS, Javascript, Ajax & PHP with complete validations.
+* It provides you Registration and Login form that can be usually seen at most of the websites for the purpose of sign in or sign up.
+* All the entries will be stored in PHP Database.
 
 ## Screenshots:-
 
-### Home page
-![Home_page](https://github.com/kritsoni/alien_invasion/blob/master/alien_invasion/images/home.png)
+### Registration form.
+![reg_form](https://github.com/kritsoni/Web-Apps/tree/master/registration_form/images/reg_form.png)
 
-### Level 1
-![Level1](https://github.com/kritsoni/alien_invasion/blob/master/alien_invasion/images/level1.png)
-
-### Shooting Bullets
-![Bullets](https://github.com/kritsoni/alien_invasion/blob/master/alien_invasion/images/shooting_bullets.png)
-
-### Lives Lost
-![liveslost](https://github.com/kritsoni/alien_invasion/blob/master/alien_invasion/images/lives_lost.png)
-
-### Level 2
-![Level2](https://github.com/kritsoni/alien_invasion/blob/master/alien_invasion/images/level2.png)
+### Registration form showing basic validations.
+![reg_form_basicval](https://github.com/kritsoni/Web-Apps/tree/master/registration_form/images/reg_form_basicval.png.png)
