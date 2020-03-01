@@ -31,3 +31,27 @@
 ### Home Page.
 ![home](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/home.png)
 
+### Create Task Page.
+![create](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/create.png)
+
+### Date validation in Create Task Page.
+![create_valid](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/create_valid.png)
+
+### Different Criteria for filtering tasks.
+![taskfilters](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/taskfilters.png)
+
+### One Filtering Criteria applied.
+![taskfilterapplied](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/taskfilterapplied.png)
+
+### Double click on any filtered task to open an edit task popup.
+![edittask](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/edittask.png)
+
+### Search feature in which searched query is highlighted 
+![search](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/search.png)
+
+
+## Tutorial Section:-
+
+### Home page
+![tut1](https://github.com/kritsoni/Web-Apps/blob/master/todolist/images/tut1.png)
+
